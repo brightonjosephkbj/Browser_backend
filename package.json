@@ -1,35 +1,17 @@
 {
-  "name": "grab-app",
+  "name": "b24-browser-backend",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "server.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "prebuild": "expo prebuild --platform android --clean"
+    "start": "node server.js"
   },
   "dependencies": {
-    "expo": "~51.0.28",
-    "react": "18.2.0",
-    "react-native": "0.74.5",
-    "@react-navigation/native": "^6.1.18",
-    "@react-navigation/bottom-tabs": "^6.6.1",
-    "react-native-screens": "~3.31.1",
-    "react-native-safe-area-context": "4.10.5",
-    "react-native-webview": "13.8.6",
-    "expo-av": "~14.0.7",
-    "expo-file-system": "~17.0.1",
-    "expo-media-library": "~16.0.4",
-    "expo-sharing": "~12.0.1",
-    "expo-status-bar": "~1.12.1",
-    "@react-native-async-storage/async-storage": "1.23.1",
-    "react-native-reanimated": "~3.10.1",
-    "react-native-gesture-handler": "~2.16.2",
-    "react-native-progress": "^5.0.1",
-    "zustand": "^4.5.4",
-    "@expo/vector-icons": "^14.0.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-pty": "^1.0.0",
+    "ws": "^8.16.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.24.0",
-    "@expo/metro-config": "~0.18.11"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
